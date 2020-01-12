@@ -1,0 +1,57 @@
+program_id,athlete_id,athlete_name,start_number,swim,t1,bike,after_b,t2,run,total_time,nationality,athlete_first,athlete_last,position
+5984,5695,Javier Gomez Noya,3,NA,NA,NA,NA,NA,NA,NA,ESP,Javier,Gomez Noya,1
+5984,11378,Jonathan Brownlee,47,NA,NA,NA,NA,NA,NA,NA,GBR,Jonathan,Brownlee,2
+5984,5692,Jan Frodeno,1,NA,NA,NA,NA,NA,NA,NA,GER,Jan,Frodeno,3
+5984,7743,Alexander Bryukhankov,2,NA,NA,NA,NA,NA,NA,NA,RUS,Alexander,Bryukhankov,4
+5984,11402,Mario Mola,63,NA,NA,NA,NA,NA,NA,NA,ESP,Mario,Mola,5
+5984,5711,Brad Kahlefeldt,5,NA,NA,NA,NA,NA,NA,NA,AUS,Brad,Kahlefeldt,6
+5984,6442,Jarrod Shoemaker,8,NA,NA,NA,NA,NA,NA,NA,USA,Jarrod,Shoemaker,7
+5984,5359,Stuart Hayes,42,NA,NA,NA,NA,NA,NA,NA,GBR,Stuart,Hayes,8
+5984,5747,Steffen Justus,4,NA,NA,NA,NA,NA,NA,NA,GER,Steffen,Justus,9
+5984,7788,Alistair Brownlee,17,NA,NA,NA,NA,NA,NA,NA,GBR,Alistair,Brownlee,10
+5984,10539,Joao Silva,10,NA,NA,NA,NA,NA,NA,NA,POR,Joao,Silva,11
+5984,5662,Laurent Vidal,22,NA,NA,NA,NA,NA,NA,NA,FRA,Laurent,Vidal,12
+5984,5305,Tim Don,11,NA,NA,NA,NA,NA,NA,NA,GBR,Tim,Don,13
+5984,5302,Simon Whitfield,14,NA,NA,NA,NA,NA,NA,NA,CAN,Simon,Whitfield,14
+5984,5320,Sven Riederer,7,NA,NA,NA,NA,NA,NA,NA,SUI,Sven,Riederer,15
+5984,5633,Vladimir Turbayevskiy,16,NA,NA,NA,NA,NA,NA,NA,RUS,Vladimir,Turbayevskiy,16
+5984,5683,Clark Ellice,44,NA,NA,NA,NA,NA,NA,NA,NZL,Clark,Ellice,17
+5984,7778,Jonathan Zipf,48,NA,NA,NA,NA,NA,NA,NA,GER,Jonathan,Zipf,18
+5984,7786,Jose Miguel Perez,46,NA,NA,NA,NA,NA,NA,NA,ESP,Jose Miguel,Perez,19
+5984,6560,William Clarke,21,NA,NA,NA,NA,NA,NA,NA,GBR,William,Clarke,20
+5984,5851,Tony Moulai,12,NA,NA,NA,NA,NA,NA,NA,FRA,Tony,Moulai,21
+5984,5332,Maik Petzold,53,NA,NA,NA,NA,NA,NA,NA,GER,Maik,Petzold,22
+5984,5296,Kris Gemmell,32,NA,NA,NA,NA,NA,NA,NA,NZL,Kris,Gemmell,23
+5984,6084,Dan Wilson,26,NA,NA,NA,NA,NA,NA,NA,AUS,Dan,Wilson,24
+5984,5823,Bruno Pais,28,NA,NA,NA,NA,NA,NA,NA,POR,Bruno,Pais,25
+5984,6131,Hendrik De Villiers,51,NA,NA,NA,NA,NA,NA,NA,RSA,Hendrik,De Villiers,26
+5984,5654,Ryosuke Yamamoto,35,NA,NA,NA,NA,NA,NA,NA,JPN,Ryosuke,Yamamoto,27
+5984,5824,Christian Prochnow,37,NA,NA,NA,NA,NA,NA,NA,GER,Christian,Prochnow,28
+5984,5929,Reinaldo Colucci,57,NA,NA,NA,NA,NA,NA,NA,BRA,Reinaldo,Colucci,29
+5984,5321,Frederic Belaubre,36,NA,NA,NA,NA,NA,NA,NA,FRA,Frederic,Belaubre,30
+5984,6202,Kyle Jones,30,NA,NA,NA,NA,NA,NA,NA,CAN,Kyle,Jones,31
+5984,5306,Ivan Raña Fuentes,18,NA,NA,NA,NA,NA,NA,NA,ESP,Ivan,Raña Fuentes,32
+5984,15944,Brendan Sexton,61,NA,NA,NA,NA,NA,NA,NA,AUS,Brendan,Sexton,33
+5984,5756,Valentin Mechsheryakov,19,NA,NA,NA,NA,NA,NA,NA,KAZ,Valentin,Mechsheryakov,34
+5984,10536,Joao Pereira,50,NA,NA,NA,NA,NA,NA,NA,POR,Joao,Pereira,35
+5984,5742,Yuichi Hosoda,25,NA,NA,NA,NA,NA,NA,NA,JPN,Yuichi,Hosoda,36
+5984,5931,Andreas Giglmayr,33,NA,NA,NA,NA,NA,NA,NA,AUT,Andreas,Giglmayr,37
+5984,7787,Oliver Freeman,24,NA,NA,NA,NA,NA,NA,NA,GBR,Oliver,Freeman,38
+5984,6086,Martin Van Barneveld,52,NA,NA,NA,NA,NA,NA,NA,NZL,Martin,Van Barneveld,39
+5984,11818,Ryan Sissons,40,NA,NA,NA,NA,NA,NA,NA,NZL,Ryan,Sissons,40
+5984,7744,Ivan Tutukin,39,NA,NA,NA,NA,NA,NA,NA,RUS,Ivan,Tutukin,41
+5984,11060,Alessandro Fabian,31,NA,NA,NA,NA,NA,NA,NA,ITA,Alessandro,Fabian,42
+5984,5776,Hiroki Sugimoto,49,NA,NA,NA,NA,NA,NA,NA,JPN,Hiroki,Sugimoto,43
+5984,5351,Daniel Lee Chi Wo,55,NA,NA,NA,NA,NA,NA,NA,HKG,Daniel,Lee Chi Wo,44
+5984,9917,Diogo Sclebin,59,NA,NA,NA,NA,NA,NA,NA,BRA,Diogo,Sclebin,45
+5984,10575,Jan Van Berkel,38,NA,NA,NA,NA,NA,NA,NA,SUI,Jan,Van Berkel,46
+5984,5718,David Hauss,20,NA,NA,NA,NA,NA,NA,NA,FRA,David,Hauss,47
+5984,6137,Erhard Wolfaardt,56,NA,NA,NA,NA,NA,NA,NA,RSA,Erhard,Wolfaardt,48
+5984,6110,James Seear,23,NA,NA,NA,NA,NA,NA,NA,AUS,James,Seear,49
+5984,5591,Courtney Atkinson,6,NA,NA,NA,NA,NA,NA,NA,AUS,Courtney,Atkinson,50
+5984,10434,Matt Chrabot,15,NA,NA,NA,NA,NA,NA,NA,USA,Matt,Chrabot,51
+5984,11315,Andrea Salvisberg,65,NA,NA,NA,NA,NA,NA,NA,SUI,Andrea,Salvisberg,52
+5984,13020,Chris Foster,29,NA,NA,NA,NA,NA,NA,NA,USA,Chris,Foster,53
+5984,5878,Attila Fecskovics,62,NA,NA,NA,NA,NA,NA,NA,HUN,Attila,Fecskovics,54
+5984,12773,Rodrigo Gonzalez,66,NA,NA,NA,NA,NA,NA,NA,MEX,Rodrigo,Gonzalez,55
+5984,7821,Jordan Bryden,64,NA,NA,NA,NA,NA,NA,NA,CAN,Jordan,Bryden,56

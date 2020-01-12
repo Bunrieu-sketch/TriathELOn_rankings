@@ -1,0 +1,37 @@
+prog_id,athlete_id,athlete_name,nationality,start_number,swim,t1,bike,after_b,t2,run,total_time,athlete_first,athlete_last,position,program
+4532,5692,Jan Frodeno,GER,7,993,56,3342,4391,17,1862,6271,Jan,Frodeno,1,Elite Men
+4532,5296,Kris Gemmell,NZL,3,1002,51,3378,4431,19,1837,6289,Kris,Gemmell,2,Elite Men
+4532,5695,Javier Gomez Noya,ESP,2,995,54,3386,4435,21,1836,6291,Javier,Gomez Noya,3,Elite Men
+4532,5662,Laurent Vidal,FRA,4,997,56,3379,4432,17,1853,6304,Laurent,Vidal,4,Elite Men
+4532,5297,Bevan Docherty,NZL,8,991,58,3386,4435,19,1887,6339,Bevan,Docherty,5,Elite Men
+4532,6442,Jarrod Shoemaker,USA,5,1001,56,3378,4435,19,1893,6348,Jarrod,Shoemaker,6,Elite Men
+4532,5755,Yulian Malyshev,RUS,10,998,54,3384,4436,22,1892,6350,Yulian,Malyshev,7,Elite Men
+4532,5591,Courtney Atkinson,AUS,6,998,53,3342,4393,19,1957,6367,Courtney,Atkinson,8,Elite Men
+4532,6084,Dan Wilson,AUS,12,998,53,3382,4433,17,1928,6377,Dan,Wilson,9,Elite Men
+4532,5332,Maik Petzold,GER,1,995,58,3340,4393,19,1984,6395,Maik,Petzold,10,Elite Men
+4532,5942,Gavin Noble,IRL,19,1004,54,3378,4436,22,1955,6414,Gavin,Noble,11,Elite Men
+4532,5331,Danylo Sapunov,UKR,15,1000,58,3376,4434,21,1962,6417,Danylo,Sapunov,12,Elite Men
+4532,5327,Hirokatsu Tayama,JPN,16,991,58,3387,4436,22,1965,6422,Hirokatsu,Tayama,13,Elite Men
+4532,5742,Yuichi Hosoda,JPN,18,1012,51,3371,4434,24,1976,6434,Yuichi,Hosoda,14,Elite Men
+4532,5654,Ryosuke Yamamoto,JPN,14,1029,54,3350,4433,19,1989,6442,Ryosuke,Yamamoto,15,Elite Men
+4532,5758,Kuniaki Takahama,JPN,27,1034,59,3348,4441,24,2005,6469,Kuniaki,Takahama,16,Elite Men
+4532,15944,Brendan Sexton,AUS,30,1038,58,3339,4435,19,2022,6475,Brendan,Sexton,17,Elite Men
+4532,5669,Claude Eksteen,RSA,17,1010,53,3374,4437,21,2029,6484,Claude,Eksteen,18,Elite Men
+4532,10108,Joshua Amberger,AUS,26,987,58,3390,4435,19,2029,6485,Joshua,Amberger,19,Elite Men
+4532,5655,Junichi Yamamoto,JPN,29,1040,56,3338,4434,19,2048,6501,Junichi,Yamamoto,20,Elite Men
+4532,10107,Josh Mchugh,AUS,25,1036,54,3347,4437,21,2066,6523,Josh,Mchugh,21,Elite Men
+4532,11315,Andrea Salvisberg,SUI,23,995,56,3386,4437,22,2113,6570,Andrea,Salvisberg,22,Elite Men
+4532,15593,Sam Appleton,AUS,34,1037,59,3345,4441,22,2123,6588,Sam,Appleton,23,Elite Men
+4532,18576,Aleksandr Latin,EST,41,1036,61,3342,4439,21,2165,6625,Aleksandr,Latin,24,Elite Men
+4532,5705,Hideo Fukui,JPN,28,1020,61,3359,4440,22,2164,6627,Hideo,Fukui,25,Elite Men
+4532,10003,Adam Carlton,AUS,20,1023,59,3353,4435,22,2205,6664,Adam,Carlton,26,Elite Men
+4532,6102,Ben Pattle,NZL,38,1006,58,3375,4439,19,2233,6691,Ben,Pattle,27,Elite Men
+4532,5776,Hiroki Sugimoto,JPN,22,999,58,3382,4439,22,2304,6764,Hiroki,Sugimoto,28,Elite Men
+4532,16315,Kohei Tsubaki,JPN,35,1095,51,3550,4696,17,2087,6802,Kohei,Tsubaki,29,Elite Men
+4532,10017,Cameron Good,AUS,36,1093,63,3544,4700,21,2106,6826,Cameron,Good,30,Elite Men
+4532,6827,Roman Bauer,KAZ,32,1097,61,3541,4699,27,2122,6849,Roman,Bauer,31,Elite Men
+4532,11535,Ognjen Stojanovic,SRB,39,1041,61,3594,4696,21,2158,6875,Ognjen,Stojanovic,32,Elite Men
+4532,18332,Carlos Javier Quinchara Forero,COL,44,1047,59,3593,4699,22,2270,6992,Carlos Javier,Quinchara Forero,33,Elite Men
+4532,28508,Shane Barrie,AUS,37,988,58,3643,4689,22,2337,7048,Shane,Barrie,34,Elite Men
+4532,10100,Drew Box,AUS,24,999,53,3635,4687,24,2377,7088,Drew,Box,35,Elite Men
+4532,10982,Kwon-Chul Kim,KOR,42,1044,64,3592,4700,26,2376,7105,Kwon-Chul,Kim,36,Elite Men

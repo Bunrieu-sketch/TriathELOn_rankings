@@ -1,0 +1,42 @@
+prog_id,athlete_id,athlete_name,nationality,start_number,swim,t1,bike,after_b,t2,run,total_time,athlete_first,athlete_last,position,program
+4520,5530,Emma Snowsill,AUS,4,1187,61,4063,5311,26,2025,7362,Emma,Snowsill,1,Elite Women
+4520,5526,Emma Moffatt,AUS,3,1155,54,4099,5308,24,2041,7371,Emma,Moffatt,2,Elite Women
+4520,12785,Juri Ide,JPN,15,1189,58,4063,5310,24,2077,7411,Juri,Ide,3,Elite Women
+4520,5571,Kathy Tremblay,CAN,17,1193,51,4063,5307,26,2077,7412,Kathy,Tremblay,4,Elite Women
+4520,7825,Kirsten Sweetland,CAN,26,1176,56,4075,5307,29,2083,7420,Kirsten,Sweetland,5,Elite Women
+4520,5369,Kiyomi Niwata,JPN,38,1215,53,4044,5312,24,2101,7437,Kiyomi,Niwata,6,Elite Women
+4520,5523,Magali Di Marco Messmer,SUI,6,1192,54,4063,5309,26,2111,7448,Magali,Di Marco Messmer,7,Elite Women
+4520,5371,Samantha Warriner,NZL,1,1218,54,4036,5308,26,2132,7465,Samantha,Warriner,8,Elite Women
+4520,5467,Vendula Frintova,CZE,10,1215,58,4036,5309,29,2130,7466,Vendula,Frintova,9,Elite Women
+4520,5476,Lauren Groves,CAN,31,1216,58,4037,5311,24,2132,7467,Lauren,Groves,10,Elite Women
+4520,12786,Mariko Adachi,JPN,37,1175,63,4074,5312,27,2131,7471,Mariko,Adachi,11,Elite Women
+4520,5410,Jessica Harrison,FRA,11,1192,53,4063,5308,29,2138,7475,Jessica,Harrison,12,Elite Women
+4520,5842,Liz Blatchford,GBR,16,1186,59,4064,5309,27,2150,7488,Liz,Blatchford,13,Elite Women
+4520,5573,Helen Jenkins,GBR,2,1190,59,4061,5310,27,2162,7501,Helen,Jenkins,14,Elite Women
+4520,5385,Jodie Swallow,GBR,24,1174,56,4085,5315,29,2171,7514,Jodie,Swallow,15,Elite Women
+4520,5312,Anja Dittmer,GER,12,1217,56,4036,5309,29,2200,7538,Anja,Dittmer,16,Elite Women
+4520,5376,Ainhoa Murua Zubizarreta,ESP,20,1191,58,4061,5310,26,2212,7548,Ainhoa,Murua Zubizarreta,17,Elite Women
+4520,6150,Barbara Riveros,CHI,36,1207,51,4050,5308,39,2214,7562,Barbara,Riveros,18,Elite Women
+4520,6069,Nicky Samuels,NZL,19,1210,49,4050,5309,26,2232,7568,Nicky,Samuels,19,Elite Women
+4520,5943,Maria Czesnik,POL,28,1197,56,4057,5310,31,2249,7588,Maria,Czesnik,20,Elite Women
+4520,9939,Helle Frederiksen,DEN,27,1237,61,4069,5367,29,2201,7597,Helle,Frederiksen,21,Elite Women
+4520,21978,Aileen Reid,IRL,43,1217,59,4090,5366,29,2210,7605,Aileen,Reid,22,Elite Women
+4520,5567,Debbie Tanner,NZL,9,1231,56,4079,5366,22,2221,7611,Debbie,Tanner,23,Elite Women
+4520,5360,Kate Allen,AUT,23,1237,58,4077,5372,32,2236,7640,Kate,Allen,24,Elite Women
+4520,6963,Irina Abysova,RUS,21,1218,61,4090,5369,31,2240,7641,Irina,Abysova,25,Elite Women
+4520,5407,Ricarda Lisk,GER,8,1215,54,4040,5309,26,2321,7656,Ricarda,Lisk,26,Elite Women
+4520,6209,Rebeccah Wassner,USA,42,1242,58,4069,5369,31,2265,7667,Rebeccah,Wassner,27,Elite Women
+4520,9742,Tomoko Sonoda,JPN,34,1196,59,4058,5313,27,2329,7669,Tomoko,Sonoda,28,Elite Women
+4520,5565,Misato Takagi,JPN,39,1240,54,4075,5369,31,2281,7681,Misato,Takagi,29,Elite Women
+4520,9817,Olga Dmitrieva,RUS,40,1222,61,4086,5369,31,2299,7697,Olga,Dmitrieva,30,Elite Women
+4520,7817,Yuliya Yelistratova,UKR,32,1252,61,4194,5507,31,2202,7738,Yuliya,Yelistratova,31,Elite Women
+4520,23847,Dan Bi Hong,KOR,45,1191,53,4069,5313,31,2412,7757,Dan Bi,Hong,32,Elite Women
+4520,6224,Kerry Lang,GBR,29,1190,51,4072,5313,31,2426,7768,Kerry,Lang,33,Elite Women
+4520,5539,Carole Peon,FRA,14,1219,63,4086,5368,31,2399,7795,Carole,Peon,34,Elite Women
+4520,5559,Amanda Stevens,USA,41,1215,58,4093,5366,29,2401,7798,Amanda,Stevens,35,Elite Women
+4520,5576,Ai Ueda,JPN,22,1312,56,4270,5638,29,2195,7862,Ai,Ueda,36,Elite Women
+4520,17003,Jillian Petersen,USA,25,1232,61,4077,5370,34,2461,7867,Jillian,Petersen,37,Elite Women
+4520,5521,Sara Mclarty,USA,44,1152,56,4105,5313,36,2545,7895,Sara,Mclarty,38,Elite Women
+4520,6783,Andrea Hewitt,NZL,7,1231,58,4216,5505,29,2414,7948,Andrea,Hewitt,39,Elite Women
+4520,10976,Na-Eun Nam,KOR,47,1219,58,4363,5640,29,2479,8149,Na-Eun,Nam,40,Elite Women
+4520,6744,Lea Coline Langit,PHI,49,1240,64,4336,5640,34,2606,8281,Lea Coline,Langit,41,Elite Women

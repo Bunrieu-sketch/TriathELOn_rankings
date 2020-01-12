@@ -1,0 +1,56 @@
+program_id,athlete_id,athlete_name,start_number,swim,t1,bike,after_b,t2,run,total_time,nationality,athlete_first,athlete_last,position
+5590,5692,Jan Frodeno,NA,NA,NA,NA,NA,NA,NA,NA,GER,Jan,Frodeno,1
+5590,5591,Courtney Atkinson,NA,NA,NA,NA,NA,NA,NA,NA,AUS,Courtney,Atkinson,2
+5590,5711,Brad Kahlefeldt,NA,NA,NA,NA,NA,NA,NA,NA,AUS,Brad,Kahlefeldt,3
+5590,5747,Steffen Justus,NA,NA,NA,NA,NA,NA,NA,NA,GER,Steffen,Justus,4
+5590,7743,Alexander Bryukhankov,NA,NA,NA,NA,NA,NA,NA,NA,RUS,Alexander,Bryukhankov,5
+5590,7747,Dmitry Polyanskiy,NA,NA,NA,NA,NA,NA,NA,NA,RUS,Dmitry,Polyanskiy,6
+5590,5297,Bevan Docherty,NA,NA,NA,NA,NA,NA,NA,NA,NZL,Bevan,Docherty,7
+5590,6442,Jarrod Shoemaker,NA,NA,NA,NA,NA,NA,NA,NA,USA,Jarrod,Shoemaker,8
+5590,5310,Reto Hug,NA,NA,NA,NA,NA,NA,NA,NA,SUI,Reto,Hug,9
+5590,6560,William Clarke,NA,NA,NA,NA,NA,NA,NA,NA,GBR,William,Clarke,10
+5590,5305,Tim Don,NA,NA,NA,NA,NA,NA,NA,NA,GBR,Tim,Don,11
+5590,5695,Javier Gomez Noya,NA,NA,NA,NA,NA,NA,NA,NA,ESP,Javier,Gomez Noya,12
+5590,6084,Dan Wilson,NA,NA,NA,NA,NA,NA,NA,NA,AUS,Dan,Wilson,13
+5590,5306,Ivan Raña Fuentes,NA,NA,NA,NA,NA,NA,NA,NA,ESP,Ivan,Raña Fuentes,14
+5590,5742,Yuichi Hosoda,NA,NA,NA,NA,NA,NA,NA,NA,JPN,Yuichi,Hosoda,15
+5590,7787,Oliver Freeman,NA,NA,NA,NA,NA,NA,NA,NA,GBR,Oliver,Freeman,16
+5590,5620,Leonardo Chacon,NA,NA,NA,NA,NA,NA,NA,NA,CRC,Leonardo,Chacon,17
+5590,5755,Yulian Malyshev,NA,NA,NA,NA,NA,NA,NA,NA,RUS,Yulian,Malyshev,18
+5590,10434,Matt Chrabot,NA,NA,NA,NA,NA,NA,NA,NA,USA,Matt,Chrabot,19
+5590,7744,Ivan Tutukin,NA,NA,NA,NA,NA,NA,NA,NA,RUS,Ivan,Tutukin,20
+5590,5662,Laurent Vidal,NA,NA,NA,NA,NA,NA,NA,NA,FRA,Laurent,Vidal,21
+5590,10539,Joao Silva,NA,NA,NA,NA,NA,NA,NA,NA,POR,Joao,Silva,22
+5590,6110,James Seear,NA,NA,NA,NA,NA,NA,NA,NA,AUS,James,Seear,23
+5590,5687,Mark Fretta,NA,NA,NA,NA,NA,NA,NA,NA,USA,Mark,Fretta,24
+5590,5320,Sven Riederer,NA,NA,NA,NA,NA,NA,NA,NA,SUI,Sven,Riederer,25
+5590,6226,Sebastian Rank,NA,NA,NA,NA,NA,NA,NA,NA,GER,Sebastian,Rank,26
+5590,13020,Chris Foster,NA,NA,NA,NA,NA,NA,NA,NA,USA,Chris,Foster,27
+5590,5296,Kris Gemmell,NA,NA,NA,NA,NA,NA,NA,NA,NZL,Kris,Gemmell,28
+5590,73138,Igor Sysoev,NA,NA,NA,NA,NA,NA,NA,NA,RUS,Igor,Sysoev,29
+5590,5750,Marek Jaskolka,NA,NA,NA,NA,NA,NA,NA,NA,POL,Marek,Jaskolka,30
+5590,5931,Andreas Giglmayr,NA,NA,NA,NA,NA,NA,NA,NA,AUT,Andreas,Giglmayr,31
+5590,5713,Gareth Halverson,NA,NA,NA,NA,NA,NA,NA,NA,AUS,Gareth,Halverson,32
+5590,5776,Hiroki Sugimoto,NA,NA,NA,NA,NA,NA,NA,NA,JPN,Hiroki,Sugimoto,33
+5590,10536,Joao Pereira,NA,NA,NA,NA,NA,NA,NA,NA,POR,Joao,Pereira,34
+5590,5657,Ruedi Wild,NA,NA,NA,NA,NA,NA,NA,NA,SUI,Ruedi,Wild,35
+5590,5758,Kuniaki Takahama,NA,NA,NA,NA,NA,NA,NA,NA,JPN,Kuniaki,Takahama,36
+5590,6086,Martin Van Barneveld,NA,NA,NA,NA,NA,NA,NA,NA,NZL,Martin,Van Barneveld,37
+5590,6104,David Matthews,NA,NA,NA,NA,NA,NA,NA,NA,AUS,David,Matthews,38
+5590,5958,Dan Alterman,NA,NA,NA,NA,NA,NA,NA,NA,ISR,Dan,Alterman,39
+5590,5351,Daniel Lee Chi Wo,NA,NA,NA,NA,NA,NA,NA,NA,HKG,Daniel,Lee Chi Wo,40
+5590,5355,Andriy Glushchenko,NA,NA,NA,NA,NA,NA,NA,NA,UKR,Andriy,Glushchenko,41
+5590,10871,Ethan Brown,NA,NA,NA,NA,NA,NA,NA,NA,USA,Ethan,Brown,42
+5590,5654,Ryosuke Yamamoto,NA,NA,NA,NA,NA,NA,NA,NA,JPN,Ryosuke,Yamamoto,43
+5590,5321,Frederic Belaubre,NA,NA,NA,NA,NA,NA,NA,NA,FRA,Frederic,Belaubre,44
+5590,5633,Vladimir Turbayevskiy,NA,NA,NA,NA,NA,NA,NA,NA,RUS,Vladimir,Turbayevskiy,45
+5590,6777,Min Ho Heo,NA,NA,NA,NA,NA,NA,NA,NA,KOR,Min Ho,Heo,46
+5590,18173,Ju Seok Kim,NA,NA,NA,NA,NA,NA,NA,NA,KOR,Ju Seok,Kim,47
+5590,5881,Duarte Silva Marques,NA,NA,NA,NA,NA,NA,NA,NA,POR,Duarte Silva,Marques,48
+5590,5327,Hirokatsu Tayama,NA,NA,NA,NA,NA,NA,NA,NA,JPN,Hirokatsu,Tayama,49
+5590,5683,Clark Ellice,NA,NA,NA,NA,NA,NA,NA,NA,NZL,Clark,Ellice,50
+5590,6541,Chang Yon Lee,NA,NA,NA,NA,NA,NA,NA,NA,KOR,Chang Yon,Lee,51
+5590,5824,Christian Prochnow,NA,NA,NA,NA,NA,NA,NA,NA,GER,Christian,Prochnow,52
+5590,22570,Kohei Shimomura,NA,NA,NA,NA,NA,NA,NA,NA,JPN,Kohei,Shimomura,53
+5590,6934,Luc Van Es,NA,NA,NA,NA,NA,NA,NA,NA,NED,Luc,Van Es,54
+5590,17844,Soung Geun Sin,NA,NA,NA,NA,NA,NA,NA,NA,KOR,Soung Geun,Sin,55
