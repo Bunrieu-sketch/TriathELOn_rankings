@@ -17,8 +17,8 @@ and backtrack athlete podium pathways.
 ### What is the Glicko rating system?
 
 The Glicko rating system was created by Professor Mark Glickman to
-expand and improve upon the famous (Elo rating
-system)\[<https://en.wikipedia.org/wiki/Elo_rating_system>\], which
+expand and improve upon the famous [Elo rating
+system](https://en.wikipedia.org/wiki/Elo_rating_system), which
 attempted to probabilistically rate chess players based on the results
 of their matchups. In both the `Elo` and `Glicko` rating systems, each
 player is associated with a Rating, and the differences in Ratings
