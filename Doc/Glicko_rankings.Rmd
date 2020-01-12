@@ -1,7 +1,10 @@
 ---
 title: "TriathELOn Rankings"
-output: github_document
+output: 
+  github_document:
+      pandoc_args: --webtex
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -90,9 +93,9 @@ $$\text{kendall's tau} = \frac{\text{number of concordant pairs - number of disc
 For example, the vectors [1,3,2] and [1,2,3] would have a `Kendall's tau` coefficient of 1/3, calculated as:<br>
 
 
-$
+$$
 \frac{2 - 1}{3} = 0.333
-$
+$$
 
 ### Initial value of players
 For new players entering the system, they are given the default values from the `PlayerRatings` package of a Rating of 1500, and a Rating Deviation of 350. In the first race, everyone is new and all start with this rating, and as the seasons progress, the number of new players in each race decreases. Hence the first race is excluded from the analysis of comparing ranking systenms. 

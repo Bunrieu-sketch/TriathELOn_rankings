@@ -45,16 +45,18 @@ information and examples about the `Glicko` formula can be found
 
 Both the Glicko and Elo rating systems were designed and derived with
 2-player zero sum games like chess in mind. To use the system in a
-triathlon context I will turn an \(n\)-person triathlon race into
-\((n)(n-1)/2\) individual “one-on-one” races. There are a couple
-problems with this approach will be discussed later. Additionally, a
-“ratings period” must be determined for each race. In the Glicko
-system, the longer since a player has played their last game, the higher
-is their ratings deviation. Somewhat arbitrarily, during a WTS season I
-have set the difference between races to be “1 period” and the
-difference from the last race of a season and the first race of the next
-season to be “6 periods”, so that periods roughly align with months
-passed.
+triathlon context I will turn an
+![n](https://latex.codecogs.com/png.latex?n "n")-person triathlon race
+into
+![(n)(n-1)/2](https://latex.codecogs.com/png.latex?%28n%29%28n-1%29%2F2
+"(n)(n-1)/2") individual “one-on-one” races. There are a couple problems
+with this approach will be discussed later. Additionally, a “ratings
+period” must be determined for each race. In the Glicko system, the
+longer since a player has played their last game, the higher is their
+ratings deviation. Somewhat arbitrarily, during a WTS season I have set
+the difference between races to be “1 period” and the difference from
+the last race of a season and the first race of the next season to be “6
+periods”, so that periods roughly align with months passed.
 
 ### Project scope
 
@@ -65,12 +67,13 @@ to longer time frames and both genders soon once the process is refined.
 <br> For each event, I will read in both a dataframe of normal race
 results including all finishers, their places, times and their
 swim-bike-run splits. Additionally, in order to apply the `glicko`
-formula to an \(n\) person triathlon race, I also read in a `one-vs-one`
-dataframe, with \(n(n-1)/2\) rows, each row giving the result of the one
-vs one race between each pair of competitors.<br> Explanation of data
-sources, extraction and cleaning is included in the `data` directory.
-<br> All functions used in this process are included in the `src`
-directory.
+formula to an ![n](https://latex.codecogs.com/png.latex?n "n") person
+triathlon race, I also read in a `one-vs-one` dataframe, with
+![n(n-1)/2](https://latex.codecogs.com/png.latex?n%28n-1%29%2F2
+"n(n-1)/2") rows, each row giving the result of the one vs one race
+between each pair of competitors.<br> Explanation of data sources,
+extraction and cleaning is included in the `data` directory. <br> All
+functions used in this process are included in the `src` directory.
 
 ``` r
 # Read in all rae results and one-vs-one race results
@@ -135,15 +138,24 @@ columns. To compare two “pre-race rankings”, one can calculate a
 results, and see which ranking system has a higher coefficient. A
 `Kendall's tau` of 0 indicates no relationship, and a `Kendall's tau`
 value of 1 indicates a perfect relationship. The formula for `Kendall's
-tau` is as
-follows:
+tau` is as follows:
 
-\[\text{kendall's tau} = \frac{\text{number of concordant pairs - number of discordant pairs}}{\text{total number of pairs}}\]
+  
+![\\text{kendall's tau} = \\frac{\\text{number of concordant pairs -
+number of discordant pairs}}{\\text{total number of
+pairs}}](https://latex.codecogs.com/png.latex?%5Ctext%7Bkendall%27s%20tau%7D%20%3D%20%5Cfrac%7B%5Ctext%7Bnumber%20of%20concordant%20pairs%20-%20number%20of%20discordant%20pairs%7D%7D%7B%5Ctext%7Btotal%20number%20of%20pairs%7D%7D
+"\\text{kendall's tau} = \\frac{\\text{number of concordant pairs - number of discordant pairs}}{\\text{total number of pairs}}")  
 
 For example, the vectors \[1,3,2\] and \[1,2,3\] would have a `Kendall's
 tau` coefficient of 1/3, calculated as:<br>
 
-$  = 0.333 $
+  
+![
+\\frac{2 - 1}{3} = 0.333
+](https://latex.codecogs.com/png.latex?%0A%5Cfrac%7B2%20-%201%7D%7B3%7D%20%3D%200.333%0A
+"
+\\frac{2 - 1}{3} = 0.333
+")  
 
 ### Initial value of players
 
