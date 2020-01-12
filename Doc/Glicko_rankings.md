@@ -10,62 +10,67 @@ competition. The ranking system will be an application of the famous
 [Glicko ranking system](http://glicko.net/glicko.html), most commonly
 used for international chess rankings. After the new ranking system is
 established, it will be tested against the ITU’s internal ranking system
-to determine which is superior in terms of predictive power.
+to determine which is superior in terms of predictive power. Ideally,
+this ranking system will be further used to track athlete development,
+and backtrack athlete podium pathways.
 
-### What is the glicko ranking system?
+### What is the Glicko rating system?
 
 The Glicko rating system was created by Professor Mark Glickman to
-expand and improve upon the famous (Elo rating system)\[\], which
+expand and improve upon the famous (Elo rating
+system)\[<https://en.wikipedia.org/wiki/Elo_rating_system>\], which
 attempted to probabilistically rate chess players based on the results
 of their matchups. In both the `Elo` and `Glicko` rating systems, each
 player is associated with a Rating, and the differences in Ratings
 between the two players is what drives the prediction for the outcome of
 a match. The larger the difference between two players, the higher the
-system will predict the stronger player’s chances to win. After each
-match, in a Bayesian-esque process rating points are transferred from
-one player to the other in a zero sum fashion and both players ratings
-are updated. The pre match Rating differences between the two players is
-what determines the amount of rating points transferred between the
-players. If one player was heavily favoured and won the match, then not
-a lot of rating points are transferred (this match has not provided much
-additional information to the system), however for two closely ranked
-players, larger ratings point changes will occur. <br> The Glicko system
-expands upon the Elo system by adding a reliability measure to a players
-rating, or RD (ratings deviation). In this way, players who have played
-more games and played more recently will have lower ratings deviations,
-and players who have not played in a long time will intuitively have
-higher rating’s deviations. Additional information and examples about
-the `Glicko` formula can be found
+system will predict the stronger player’s chances to win. In a
+Bayesian-esque process, after each match rating points are transferred
+from the losing player to the winning player in a zero sum fashion and
+both players ratings are updated. The pre match Rating differences
+between the two players is what determines the amount of rating points
+transferred between the players. If one player was heavily favoured and
+won the match, then not a lot of rating points are transferred (this
+match has not provided much additional information to the system),
+however for two closely ranked players, larger ratings point changes
+will occur. <br> The Glicko system expands upon the Elo system by adding
+a reliability measure to a players rating, or RD (ratings deviation). In
+this way, players who have played more games and played more recently
+will have lower ratings deviations, and players who have not played in a
+long time will intuitively have higher rating’s deviations. Additional
+information and examples about the `Glicko` formula can be found
 [here](http://www.glicko.net/glicko/glicko.pdf)
 
 ### Adapting Glicko rating system to ITU triathlon
 
 Both the Glicko and Elo rating systems were designed and derived with
 2-player zero sum games like chess in mind. To use the system in a
-triathlon context I will turn an n-person triathlon race into (n)(n-1)/2
-individual “one-on-one” races. There are a couple problems with this
-approach will be discussed at the end. Additionally, a “ratings period”
-must be determined for each race. In the glicko system, the longer since
-a player has played their last game, the higher is their ratings
-deviation. Somewhat arbitrarily, during a WTS season I have set the
-difference between races to be “1 period” and the difference from the
-last race of a season and the first race of the next season to be “6
-periods”, so that periods roughly align with months passed.
+triathlon context I will turn an \(n\)-person triathlon race into
+\((n)(n-1)/2\) individual “one-on-one” races. There are a couple
+problems with this approach will be discussed later. Additionally, a
+“ratings period” must be determined for each race. In the Glicko
+system, the longer since a player has played their last game, the higher
+is their ratings deviation. Somewhat arbitrarily, during a WTS season I
+have set the difference between races to be “1 period” and the
+difference from the last race of a season and the first race of the next
+season to be “6 periods”, so that periods roughly align with months
+passed.
 
 ### Project scope
 
 To begin, I will read in the data from men’s race results for 2009 WTS
-and 2010 WTS. At this point, I am only looking at men’s races and this
-short time period to make analysis simpler, but will scale up to longer
-time frames and both genders soon once the process is refined. <br> For
-each event, I will read in both a dataframe of normal race results
-including all finishers, their places, times and their swim-bike-run
-splits. Additionally, in order to apply the `glicko` formula to an \(n\)
-person triathlon race, I also read in a `one-vs-one` dataframe, with
-\(n(n-1)/2\) rows, each row giving the result of the one vs one race
-between two competitors.<br> Explanation of data sources, extraction and
-cleaning is included in the `data` directory. <br> All functions used in
-this process are included in the `src` directory.
+and 2010 WTS seasons. At this point, I am only looking at men’s races
+and this short time period to make analysis simpler, but will scale up
+to longer time frames and both genders soon once the process is refined.
+<br> For each event, I will read in both a dataframe of normal race
+results including all finishers, their places, times and their
+swim-bike-run splits. Additionally, in order to apply the `glicko`
+formula to an \(n\) person triathlon race, I also read in a `one-vs-one`
+dataframe, with \(n(n-1)/2\) rows, each row giving the result of the one
+vs one race between each pair of competitors.<br> Explanation of data
+sources, extraction and cleaning is included in the `data` directory.
+<br> All functions used in this process are included in the `src`
+directory.
 
 ``` r
 # Read in all rae results and one-vs-one race results
@@ -177,7 +182,7 @@ races <- list(list(md_df_09, md_ovo_09), list(ws_df_09, ws_ovo_09), list(kz_df_0
               list(kz_df_10, kz_ovo_10), list(bd_df_10, bd_ovo_10))
 
 ### Find optimal level of C
-c_vec <- seq(1, 5, by=1)
+c_vec <- seq(5, 100, by=5)
 
 # Period incrementer for races
 average_results <- rep(NA, length(c_vec))
@@ -213,28 +218,44 @@ results_summary <- tibble(c = c_vec, average_kendall_tau = average_results)
 results_summary
 ```
 
-    ## # A tibble: 5 x 2
-    ##       c average_kendall_tau
-    ##   <dbl>               <dbl>
-    ## 1     1               0.416
-    ## 2     2               0.416
-    ## 3     3               0.416
-    ## 4     4               0.416
-    ## 5     5               0.418
+    ## # A tibble: 20 x 2
+    ##        c average_kendall_tau
+    ##    <dbl>               <dbl>
+    ##  1     5               0.418
+    ##  2    10               0.419
+    ##  3    15               0.418
+    ##  4    20               0.416
+    ##  5    25               0.417
+    ##  6    30               0.415
+    ##  7    35               0.411
+    ##  8    40               0.407
+    ##  9    45               0.402
+    ## 10    50               0.398
+    ## 11    55               0.397
+    ## 12    60               0.394
+    ## 13    65               0.391
+    ## 14    70               0.389
+    ## 15    75               0.387
+    ## 16    80               0.386
+    ## 17    85               0.384
+    ## 18    90               0.384
+    ## 19    95               0.380
+    ## 20   100               0.379
 
 ## Comparing glicko rankings to ITU rankings
 
-Now that the optimal c level has been found to be 5, we can compare the
-two ranking systems (ITU rankings and Glicko rankings). To do this, the
-process will be similar to above, except now we are working with a fixed
-value of c, and are also calculating the `kendall's tau coefficient` for
-the itu ranking system. The process followed is: <br><br> - for each
-race in the dataset<br> —\> update race results dataframe with previous
-glicko rankings, and rank athletes according to their glicko
-rankings<br> —\> determine kendall’s tau correlation between glicko
-rankings and their finish results<br> —\> determine kendall’s tau
-correlation between itu rankings and their finish results<br> —\> use
-the results of the race to appropriately update the glicko
+Now that the optimal c level has been found to be 10, we can compare the
+two ranking systems (ITU rankings and Glicko rankings) in terms of their
+predictive power. To do this, the process will be similar to above,
+except now we are working with a fixed value of c, and are also
+calculating the `kendall's tau coefficient` for the itu ranking system.
+The process followed is: <br><br> - for each race in the dataset<br> —\>
+update race results dataframe with previous glicko rankings, and rank
+athletes according to their glicko rankings<br> —\> determine kendall’s
+tau correlation between glicko rankings and finish results<br> —\>
+determine kendall’s tau correlation between itu rankings and finish
+results<br> —\> use the results of the race to appropriately update the
+glicko
 rankings<br>
 
 ``` r
@@ -316,28 +337,44 @@ comparison_df %>%
     ## # A tibble: 2 x 2
     ##   method mean_kendalls
     ##   <chr>          <dbl>
-    ## 1 glicko         0.397
+    ## 1 glicko         0.398
     ## 2 itu            0.415
 
-### Issues with Glicko formula and further improvements
+### Further improvements
 
-  - one `performance` has become ~50 performances, and therefore
-    incorrectly low Ratings Deviations are achieved quickly. A quick and
-    dirty resolution to this is to set the minimum Ratings Deviation to
-    30, which is a measure suggested by Prof. Glickman, in order to
-    ensure that meaningful changes in performance level can be always be
-    made.
-  - DNF’s. For simplicity, these were removed. It is difficult to
+  - Including the racing tier one below the WTS (World Cup races) would
+    be helfpful for multiple reasons. Firstly, it would provide more
+    information on athletes in the system as we would have more
+    information on athletes competing in both levels of play. Currently
+    for athletes making their WTS debut we have assigned their initial
+    rating to the default 1500 rating. However, if we included WC races,
+    for these athletes we would likely already have a ranking via
+    performances at the World Cup level, which should improve predictive
+    performance in their first WTS race.
+  - It may be interesting to also have individual `swim`, `bike` and
+    `run` glicko rankings in addition to their overall rankings. This
+    could be used for more advanced prediction taking into account
+    specific course demands. For example, on courses where historically
+    races have come together with large packs off the bike, the pre race
+    `run` glicko ranking would be more important than on other more
+    challenging bike courses, etc.
+
+### Issues with applying Glicko formula
+
+  - The main issue with applying the glicko formula to an n-person
+    triathlon race is that one `performance` has become ~50
+    performances, and therefore incorrectly low Ratings Deviations are
+    achieved quickly. A quick and dirty resolution to this is to set the
+    minimum Ratings Deviation to 30, which is a measure suggested by
+    Prof. Glickman and ensures that meaningful changes in performance
+    level can always be made.
+  - Handling DNF’s. For simplicity, these were removed from race
+    datasets, and only finish positions were used to influence the
+    updated glicko rating system at each step. It is difficult to
     determine the best one size fits all approach to DNFs for the simple
     reason that they are often not random. Many DNFs are random (bike
     crashes, etc), however there are certainly many cases where an
-    athlete may pull the plug when they are having a poor performance.
-    In these cases, their glicko rankings really should drop on account
-    of this, but they are being removed from the results so their
-    ranking will not change (ratings deviation will increase however.)
-  - Including the racing tier one below the WTS (World Cup races) would
-    be helfpful as then athletes who are making their WTS debut, instead
-    of starting with the default 1500 rating, would likely already have
-    a ranking via performances at the World Cup level. Additionally, for
-    athetes who race on both circuits, it would allow for more
-    information to be gathered.
+    athlete may DNF when they are having a poor performance. In these
+    cases, their glicko rankings really should drop on account of this,
+    but as they are being removed from the results, their ranking will
+    not change (ratings deviation will increase however).
