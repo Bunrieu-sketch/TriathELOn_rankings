@@ -1,7 +1,7 @@
 #### Under construction
 
 ## TriathELOn rankings
-Applying the [Glicko](http://www.glicko.net/glicko.html) ranking system to historical [ITU](triathlon.org) World Series triathlon results.
+Applying the [Glicko](http://www.glicko.net/glicko.html) ranking system to historical [ITU](www.triathlon.org) World Series triathlon results.
 
 #### Analysis
 Main analysis/report is at [Doc/Glicko_rankings.md](https://github.com/zanderhinton/TriathELOn_rankings/blob/master/Doc/Glicko_rankings.md)
