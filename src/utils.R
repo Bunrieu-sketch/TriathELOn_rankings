@@ -6,7 +6,7 @@
 clean_df <- function(df){
   df <- df %>%
     clean_names() %>%
-    filter(position != 'DNF', position != 'DSQ', position != 'DNS') %>%
+    filter(position != 'DNF', position != 'DSQ', position != 'DNS', position != 'LAP') %>%
     # convert all times to seconds
     mutate(athlete_name = paste(athlete_first, athlete_last),
            swim = period_to_seconds(hms(swim)),
@@ -132,9 +132,12 @@ race_update <- function(glicko_obj, rankings_df, race_df, ovo_df, c){
   race_gl <- append_glicko_to_race(race_df, rankings_df)
   # compare kendall's tau of the two rankings systems and append to the rankings_df
   correlation <- cor(race_gl$glicko_rank, race_gl$position, method = "kendall")
-  # finally, update the rankings after madrid
+  # compare R2 of the two ranking systems and append to the rankings df
+  r_squared <- summary(lm(race_gl$position~race_gl$glicko_rank))$adj.r.squared
+    
+  # finally, update the rankings after the next race
   glicko <- glicko_ratings(ovo_df, status = glicko_obj, c = c)
   rankings_df <- updated_rankings(glicko)
   
-  list(glicko, rankings_df, correlation)
+  list(glicko, rankings_df, correlation, r_squared)
 }
