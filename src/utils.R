@@ -205,12 +205,61 @@ find_best_c <- function(c_vector, races_list){
   best_c
 }
 
-rankings_over_time <- function(rankings_list, gender){
+compare_rankings <- function(races_list, best_c){
+    # Track the kendall's tau between both approaches
+    tau_glicko <- rep(NA, length(races_list))
+    tau_itu <- rep(NA, length(races_list))
+    # Track R^2 btwn both approaches
+    r2_glicko <- rep(NA, length(races_list))
+    r2_itu <- rep(NA, length(races_list))
+
+    # Reset glicko and correlations
+    first_race <- races_list[[1]][2]
+    glicko <- glicko_ratings(first_race)
+    rankings_df <- updated_rankings(glicko)
+    # iterate through each race
+    count <- 1
+    for (race in races_list){
+            race_df <- race[[1]]
+            race_ovo <- race[[2]]
+            # pass in optimal value of C
+            update <- race_update(glicko, rankings_df, race_df, race_ovo, c = best_c)
+            # pass in results from the update for use in next iteration
+            glicko <- update[[1]]
+            rankings_df <- update[[2]]
+            # just a list
+            tau_glicko[count] <- update[[3]]
+            r2_glicko[count] <- update[[4]]
+            tau_itu[count] <- cor(race_df$start_number, race_df$position, method = "kendall")
+            if (race_df %>% select(start_number) %>% unique() %>% pull() %>% length() > 1) {
+                r2_itu[count] <- summary(lm(race_df$position~race_df$start_number))$adj.r.squared
+            }
+            count <- count + 1
+    }
+    list(tau_glicko, tau_itu, r2_glicko, r2_itu)
+}
+
+summary_stats <- function(rankings_list, year_vec){
   results <- tibble("tau_glicko" = rankings_list[[1]], 
                     "tau_itu" = rankings_list[[2]], 
                     "r2_glicko" = rankings_list[[3]], 
                     "r2_itu" = rankings_list[[4]], 
-                    year)
+                    "year" = year_vec)
+  tidy_df <- results %>% gather("metric", "score", -year) %>%
+    filter(year > 2012) %>%
+    group_by(metric) %>%
+    summarise(mean_metric = mean(score))
+  tidy_df
+}
+
+
+
+rankings_over_time <- function(rankings_list, gender, year_vec){
+  results <- tibble("tau_glicko" = rankings_list[[1]], 
+                    "tau_itu" = rankings_list[[2]], 
+                    "r2_glicko" = rankings_list[[3]], 
+                    "r2_itu" = rankings_list[[4]], 
+                    "year" = year_vec)
   tidy_df <- results %>% gather("metric", "score", -year)
   
   # take data after year 2012 for plotting and summarizing
@@ -239,18 +288,5 @@ rankings_over_time <- function(rankings_list, gender){
   
 }
 
-
-summary_stats <- function(rankings_list){
-  results <- tibble("tau_glicko" = rankings_list[[1]], 
-                    "tau_itu" = rankings_list[[2]], 
-                    "r2_glicko" = rankings_list[[3]], 
-                    "r2_itu" = rankings_list[[4]], 
-                    year)
-  tidy_df <- results %>% gather("metric", "score", -year) %>%
-    filter(year > 2012) %>%
-    group_by(metric) %>%
-    summarise(mean_metric = mean(score))
-  tidy_df
-}
 
 
